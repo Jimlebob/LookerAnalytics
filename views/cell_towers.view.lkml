@@ -75,4 +75,9 @@ view: cell_towers {
     type: count
     drill_fields: []
   }
+  dimension: Location {
+    type:  location
+    sql_latitude: ${TABLE}.lat ;;
+    sql_longitude: ${TABLE}.lon ;;
+  }
 }
